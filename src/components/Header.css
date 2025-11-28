@@ -1,0 +1,131 @@
+/* src/components/Header.css */
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: #ffffff;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.04);
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+/* Logo left */
+.header-logo {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #2d2d2d;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+}
+
+.header-logo span {
+  color: #7c3aed; /* purple accent */
+  margin-left: 4px;
+}
+
+/* Search center */
+.header-search {
+  flex: 1;
+  max-width: 540px;
+}
+
+.header-search input {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid #e0e0e0;
+  background: #fafafa;
+  font-size: 0.95rem;
+  outline: none;
+  transition: box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.header-search input:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 2px rgba(124, 58, 237, 0.2);
+}
+
+/* Cart right */
+.header-cart-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: #f5f3ff;
+  color: #4c1d95;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.cart-icon {
+  font-size: 1.1rem;
+}
+
+.cart-badge {
+  min-width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  background: #7c3aed;
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.header {
+  background: #fff;
+  padding: 12px 20px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 20px;
+  color: #333;
+  text-decoration: none;
+}
+
+.search-input {
+  flex: 1;
+  margin: 0 20px;
+  padding: 8px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.nav-cart {
+  font-size: 16px;
+  font-weight: 600;
+  color: #5a2dff;
+  text-decoration: none;
+}
+
+.nav-cart:hover {
+  text-decoration: underline;
+}

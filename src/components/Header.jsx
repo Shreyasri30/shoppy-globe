@@ -1,33 +1,40 @@
+// src/components/Header.jsx
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { setSearchText } from '../store/cartSlice';
+import { setSearchText, selectCartCount } from '../store/cartSlice';
+import './Header.css';
 
-// top navigation + search + cart count
 function Header() {
   const dispatch = useDispatch();
+  const cartCount = useSelector(selectCartCount);
 
-  const cartCount = useSelector(state =>
-    state.cart.items.reduce((sum, item) => sum + item.quantity, 0)
-  );
+  const handleSearchChange = (e) => {
+    dispatch(setSearchText(e.target.value));
+  };
 
   return (
     <header className="header">
-      <div className="header-left">
-        <Link to="/" className="logo">
-          ShoppyGlobe
+      <div className="header-inner">
+        {/* Logo */}
+        <Link to="/" className="header-logo">
+          Shoppy<span>Globe</span>
         </Link>
-      </div>
 
-      <div className="header-center">
-        <input
-          type="text"
-          placeholder="Search products..."
-          onChange={e => dispatch(setSearchText(e.target.value))}
-        />
-      </div>
+        {/* Search */}
+        <div className="header-search">
+          <input
+            type="text"
+            placeholder="Search products..."
+            onChange={handleSearchChange}
+          />
+        </div>
 
-      <div className="header-right">
-        <Link to="/cart">Cart ({cartCount})</Link>
+        {/* Cart */}
+        <div className="header-cart">
+        <Link to="/cart" className="nav-cart">
+          🛒 Cart ({cartCount})
+        </Link>
+        </div>
       </div>
     </header>
   );
