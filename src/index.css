@@ -530,3 +530,69 @@ button {
   outline: 2px solid #7b4bff;
   outline-offset: 2px;
 }
+
+/* FOOTER STYLES */
+
+.app-footer {
+  background: #2d2d2d; /* Dark background for contrast */
+  color: #f8fafc; /* Light text */
+  padding: 2.5rem 1.5rem 1.5rem;
+  margin-top: auto; /* Pushes the footer to the bottom */
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  border-bottom: 1px solid #4b5563; /* Light separator */
+  padding-bottom: 2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-section h4 {
+  color: #7c3aed; /* Purple theme color for headings */
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.footer-section a,
+.footer-section p {
+  color: #a1a1aa; /* Lighter text for content */
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  transition: color 0.2s;
+}
+
+.footer-section a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-bottom p {
+  color: #6b7280;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
