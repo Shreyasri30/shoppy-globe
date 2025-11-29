@@ -1,6 +1,4 @@
-/* ------------------------------
-   Global Reset & Base Styles
-   ------------------------------ */
+/*Overall Professional UI*/
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
@@ -43,9 +41,7 @@ button {
   transition: background-color 0.2s, transform 0.1s;
 }
 
-/* ------------------------------
-   Header
-   ------------------------------ */
+/*Header*/
 
 .header {
   position: sticky;
@@ -114,9 +110,7 @@ button {
   color: #4f46e5;
 }
 
-/* ------------------------------
-   Utility & Form Styles
-   ------------------------------ */
+/* Utility & Form Styles*/
 
 .form-field {
   margin-bottom: 1rem;
@@ -149,9 +143,7 @@ button {
   background: #ffffff;
 }
 
-/* ------------------------------
-   Product List (Home Page)
-   ------------------------------ */
+/*Product List (Home Page)*/
 
 .product-grid {
   display: grid;
@@ -233,9 +225,7 @@ button {
   background: #4338ca;
 }
 
-/* ------------------------------
-   Product Detail
-   ------------------------------ */
+/*Product Detail*/
 
 .detail-container {
   padding-top: 2rem;
@@ -303,9 +293,7 @@ button {
 }
 
 
-/* ------------------------------
-   Cart & Checkout
-   ------------------------------ */
+/*Cart & Checkout*/
 
 .cart-page, .checkout-container {
   max-width: 900px;
@@ -466,9 +454,7 @@ button {
   background: #047857;
 }
 
-/* ------------------------------
-   Media Queries (Responsiveness)
-   ------------------------------ */
+/*Media Queries (Responsiveness)*/
 
 @media (max-width: 768px) {
   .header-inner {
