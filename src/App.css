@@ -71,3 +71,8 @@ body {
   background-color: #f5f5f5;
   border-color: #888;
 }
+
+button,
+a {
+  transition: all 0.2s ease-in-out;
+}
