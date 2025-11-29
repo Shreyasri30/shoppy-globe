@@ -1,10 +1,8 @@
-/* src/App.css */
-
 .app {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: #f8fafc; /* Match new background color */
+  background: #f8fafc; /*professional UI*/
 }
 
 .main-content {

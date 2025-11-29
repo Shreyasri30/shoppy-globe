@@ -1,4 +1,3 @@
-// src/store/cartSlice.js
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
@@ -13,7 +12,7 @@ const cartSlice = createSlice({
     setSearchText(state, action) {
       state.searchText = action.payload;
     },
-
+//cart features - add, remove, update quantity
     addToCart(state, action) {
       const product = action.payload;
       const existing = state.items.find((i) => i.id === product.id);
