@@ -1,4 +1,3 @@
-// src/components/Header.jsx
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { setSearchText, selectCartCount } from '../store/cartSlice';
