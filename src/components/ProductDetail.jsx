@@ -37,7 +37,7 @@ function ProductDetail() {
       <div className="detail-card">
         <img
           src={product.thumbnail}
-          alt={product.title}
+          alt={`Image of ${product.title}`}
           className="detail-image"
         />
 
