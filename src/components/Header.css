@@ -129,3 +129,9 @@
 .nav-cart:hover {
   text-decoration: underline;
 }
+
+/* Emphasize the cart count slightly */
+.cart-count {
+  font-weight: 700;
+  color: #4f46e5;
+}
