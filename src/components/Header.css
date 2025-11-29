@@ -1,5 +1,4 @@
-/* src/components/Header.css */
-
+/*styles for header*/
 .header {
   position: sticky;
   top: 0;
@@ -29,12 +28,13 @@
   letter-spacing: 0.03em;
 }
 
+/*purple theme*/
 .header-logo span {
-  color: #7c3aed; /* purple accent */
+  color: #7c3aed;
   margin-left: 4px;
 }
 
-/* Search center */
+/* Search bar */
 .header-search {
   flex: 1;
   max-width: 540px;
