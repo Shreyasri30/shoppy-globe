@@ -12,7 +12,7 @@ function ProductItem({ product }) {
       <Link to={`/products/${product.id}`}>
         <img
           src={product.thumbnail}
-          alt={product.title}
+          alt={`Image of ${product.title}`}
           loading="lazy"
           className="product-image"
         />
