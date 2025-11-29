@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import axios from 'axios';
 import { useDispatch } from 'react-redux';
-// CRITICAL FIX: Changed '..src/store/cartSlice' to '../store/cartSlice'
 import { addToCart } from '../store/cartSlice';
 
 function ProductDetail() {
@@ -15,7 +14,7 @@ function ProductDetail() {
   useEffect(() => {
     async function fetchProduct() {
       try {
-        // Using axios, which is fine, but should match the structure of useProducts.js
+        // Using axios
         const res = await axios.get(`https://dummyjson.com/products/${id}`);
         setProduct(res.data);
       } catch (e) {
