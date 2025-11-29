@@ -2,6 +2,7 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { updateQuantity, removeFromCart } from '../store/cartSlice';
 
+//Features of items in cart page
 function CartItem({ item }) {
   const dispatch = useDispatch();
 
@@ -31,6 +32,7 @@ function CartItem({ item }) {
           <button onClick={handleIncrease}>+</button>
         </div>
 
+//remove items from cart
         <button
           className="remove-btn"
           onClick={() => dispatch(removeFromCart(item.id))}
