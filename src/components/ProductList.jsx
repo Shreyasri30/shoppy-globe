@@ -18,6 +18,7 @@ function ProductList() {
     return <p>No products found.</p>;
   }
 
+  // Rendering all products returned by the hook
   return (
     <div className="product-grid">
       {filtered.map(product => (
