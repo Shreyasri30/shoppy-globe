@@ -3,6 +3,7 @@ import { clearCart } from '../store/cartSlice';
 import { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
+//Payment and place order page
 function Checkout() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -26,7 +27,7 @@ function Checkout() {
   });
 };
 
-
+//error handling to place order
   const handleOrder = () => {
     if (!userInfo.name || !userInfo.email || !userInfo.address) {
       alert('Please fill all details');
@@ -51,7 +52,6 @@ function Checkout() {
   }, [orderPlaced, navigate]);
 
   if (orderPlaced) {
-    // Styling adjusted for a cleaner look without inline 'color: #fff'
     return (
       <div className="checkout-container" style={{ textAlign: 'center', padding: '4rem', background: '#ffffff', borderRadius: '12px', boxShadow: '0 4px 12px rgba(15, 23, 42, 0.05)' }}>
         <h2 style={{ color: '#059669', marginBottom: '1rem' }}>🎉 Order Placed Successfully!</h2>
@@ -67,7 +67,7 @@ function Checkout() {
 
       <div className="checkout-content">
         
-        {/* SHIPPING FORM - UPDATED STRUCTURE */}
+        {/* SHIPPING FORM*/}
         <div className="checkout-form">
           <h3>Shipping Details</h3>
 
@@ -117,10 +117,9 @@ function Checkout() {
           <p><span>Subtotal:</span> <strong>₹{subtotal.toFixed(2)}</strong></p>
           <p><span>Delivery:</span> <strong>₹{delivery}</strong></p>
           
-          {/* Total is now a heading with flex-display for alignment */}
           <h3><span>Total:</span> <span>₹{total.toFixed(2)}</span></h3>
 
-          {/* BUTTON - UPDATED CLASS NAME */}
+          {/* BUTTON - WITH CLASS NAME */}
           <button onClick={handleOrder} className="place-order-button">
             Place Order
           </button>
