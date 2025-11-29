@@ -120,7 +120,7 @@ Repository: <https://github.com/Shreyasri30/shoppy-globe>
   - Fixed header with project name, search bar and cart link.
   - Main product grid with responsive cards.
   - Dedicated Cart and Checkout layouts with card-style sections.
-- No UI libraries used – pure CSS so that React fundamentals remain the focus.
+- No UI libraries used pure CSS so that React fundamentals remain the focus.
 
 ---
 
