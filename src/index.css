@@ -517,3 +517,12 @@ button {
   padding-top: 0.75rem;
   margin-top: 0.75rem;
 }
+
+/* Subtle hover states for checkout and clear buttons */
+.checkout-btn:hover {
+  background: #4338ca;
+}
+
+.clear-cart-btn:hover {
+  background: #d1d5db;
+}
