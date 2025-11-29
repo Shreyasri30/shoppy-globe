@@ -32,10 +32,9 @@ function CartItem({ item }) {
           <button onClick={handleIncrease}>+</button>
         </div>
 
-/*remove items from cart*/
         <button
           className="remove-btn"
-          onClick={() => dispatch(removeFromCart(item.id))}
+          onClick={() => dispatch(removeFromCart(item.id))} //remove items from cart
         >
           Remove
         </button>
