@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { addToCart } from '../store/cartSlice';
-import PropTypes from 'prop-types'; // ADDED
+import PropTypes from 'prop-types'; 
 
 // single product card
 function ProductItem({ product }) {
